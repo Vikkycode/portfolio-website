@@ -1,0 +1,11 @@
+
+
+.flexCenter {
+    @apply flex
+           items-center
+           justify-between         
+}
+
+.button{
+    @apply bg-red-300
+}
