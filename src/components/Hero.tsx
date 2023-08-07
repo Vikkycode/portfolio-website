@@ -1,21 +1,43 @@
-import React from 'react'
-
+import Link from 'next/link'
+import {AiFillLinkedin,AiFillTwitterSquare,AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image'
+import avatar from '../../public/images/avatar.jpg'
+import style from '../styles/global.module.css'
 const Hero = () => {
   return (
-    <div className=' top-32 absolute'>
-        <div className='flex items-center justify-between'>
-        <div className='flex flex-col flex-1 absolute z-10'>
-        <h1 className='text-6xl font-extrabold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-300'>Hello, I am <span>Victor</span></h1>
-        <h1 className='text-5xl font-semibold mb-5'>Frontend Developer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit.Lorem ipsum dolor sit amet consectetur 
-        adipisicing elit.
-        </p>
-        <button className='bg-red-800 p-2 w-28 rounded-full mt-10'>Click me</button>
+    <div className='h-screen relative lg:top-[5rem] top-[6rem]'>
+        <div className='lg:flex items-center justify-between'>
+        <div className='flex flex-col flex-1 absolute z-20'>
+        <h1 className={`${style.gradientText} text-4xl lg:text-6xl mb-5`}>Hello, I am <span>Victor,</span></h1>
+        <h1 className='text-4xl lg:text-6xl font-semibold mb-5'>Frontend Developer</h1>
+        <ul className='flex lg:justify-start justify-center gap-[30px]'>
+          <Link href=''>
+            <AiFillLinkedin
+            size={30} />
+          </Link>
+          <Link href=''>
+            <AiFillGithub
+             size={30} />
+          </Link>
+          <Link href=''>
+            <AiFillTwitterSquare
+             size={30} />
+          </Link>
+        </ul>
         </div>
-        <div className='h-[300px] w-[300px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 invisible'></div>
-        <div className='h-[300px] w-[300px] rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 '>
-            <div className="h-[290px] w-[290px] rounded-full absolute z-10 left-[290px] bg-[#0d0d26]"></div>
+        <div className='h-[300px] w-[300px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 lg:invisible'></div>
+        <div className='lg:h-[400px] lg:w-[400px] rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 right-[90px] relative
+        '>
+            <div className="h-[395px] w-[395px] rounded-full absolute z-10 left-[2px] top-[3px] bg-[#0d0d26] lg:block hidden"></div>
+            <div className={`${style.gradientCircle} h-[100px] w-[100px] left-[350px] top-[150px] absolute z-10`}></div>
+            <div className={`${style.gradientCircle} h-[200px] w-[200px] left-[170px] lg:left-[230px] -top-[3rem] lg:top-[20px]`}>
+          <Image src={avatar} 
+          className='rounded-full absolute z-20 object-cover top-[1px] left-[1px]'
+          height={197}
+          width={197}
+          alt="Picture of the Victor" 
+          />          
+            </div>
         </div>
         </div>
     </div>
