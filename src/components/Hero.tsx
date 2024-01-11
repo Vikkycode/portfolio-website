@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import {AiFillLinkedin,AiFillTwitterSquare,AiFillGithub} from 'react-icons/ai'
+
 import Image from 'next/image'
 import avatar from '../../public/images/avatar.jpg'
 import style from '../styles/global.module.css'
@@ -11,15 +12,19 @@ const Hero = () => {
         <h1 className={`${style.gradientText} text-4xl lg:text-6xl mb-5`}>Hello, I am <span>Victor,</span></h1>
         <h1 className='text-4xl lg:text-6xl font-semibold mb-5'>Frontend Developer</h1>
         <ul className='flex lg:justify-start justify-center gap-[30px]'>
-          <Link href=''>
+          <Link 
+          href='https://linkedin.com/in/victor-oricha'
+          >
             <AiFillLinkedin
             size={30} />
           </Link>
-          <Link href=''>
+          <Link
+          href='https://github.com/Vikkycode'>
             <AiFillGithub
              size={30} />
           </Link>
-          <Link href=''>
+          <Link
+          href='https://twitter.com/oricha_victor'>
             <AiFillTwitterSquare
              size={30} />
           </Link>
