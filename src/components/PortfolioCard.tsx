@@ -19,7 +19,7 @@ const PortfolioCard = (props:any) => {
          
           <Link 
           href={`${props.demolink}`}
-          className='border-none text-[#0d0d26] py-2 px-3 rounded-full bg-[#fcd731]'>
+          className='border-none text-[#0d0d26] py-2 px-3 rounded-full bg-[#fcd731] hover:bg-yellow-200'>
           Live Demo
           </Link>
         

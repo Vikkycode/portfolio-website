@@ -20,7 +20,7 @@ const PortfolioList = () => {
       }
 
             
-        <PortfolioCard />
+        
     </div>
   )
 }

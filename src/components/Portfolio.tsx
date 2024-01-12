@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import PortfolioList from './PortfolioList';
+import style from '../styles/global.module.css'
 
 
 const Portfolio = ()=>{
     return (
-        <section className='h-screen w-full'>
-            <h1 className='font-400 text-2xl leading-[32px] tracking-[10%]'>Portfolio</h1>
+        <section id='portfolio' className='h-full xl:h-screen w-full'>
+            <h1 className={`text-[#fcd731] text-4xl py-20 text-center font-mono font-[900]`}>Portfolio</h1>
+            <Suspense fallback={<p>Loading...</p>}>
                <PortfolioList />
+            </Suspense>
         </section>
     )
 }

@@ -2,31 +2,35 @@ import Link from 'next/link'
 import {AiFillLinkedin,AiFillTwitterSquare,AiFillGithub} from 'react-icons/ai'
 
 import Image from 'next/image'
-import avatar from '../../public/images/avatar.jpg'
+import avatar from '../../public/images/avatar-removebg.png'
+
 import style from '../styles/global.module.css'
 const Hero = () => {
   return (
     <div className='h-screen relative lg:top-[5rem] top-[6rem]'>
         <div className='lg:flex items-center justify-between'>
         <div className='flex flex-col flex-1 absolute z-20'>
-        <h1 className={`${style.gradientText} text-4xl lg:text-6xl mb-5`}>Hello, I am <span>Victor,</span></h1>
+        <h1 className={`text-[#fcd731] font-mono font-[900] text-4xl lg:text-6xl mb-5`}>Hello, I am <span>Victor,</span></h1>
         <h1 className='text-4xl lg:text-6xl font-semibold mb-5'>Frontend Developer</h1>
         <ul className='flex lg:justify-start justify-center gap-[30px]'>
           <Link 
           href='https://linkedin.com/in/victor-oricha'
           >
             <AiFillLinkedin
-            size={30} />
+            size={30} 
+            className='text-[#fcd731]'/>
           </Link>
           <Link
           href='https://github.com/Vikkycode'>
             <AiFillGithub
-             size={30} />
+             size={30} 
+             className='text-[#fcd731]'/>
           </Link>
           <Link
           href='https://twitter.com/oricha_victor'>
             <AiFillTwitterSquare
-             size={30} />
+             size={30} 
+             className='text-[#fcd731]'/>
           </Link>
         </ul>
         </div>

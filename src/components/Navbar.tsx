@@ -16,24 +16,27 @@ const Navbar = () => {
   return (
     <div className={`${styles.flexCenter} h-[5rem]`}>
         <div className='text-2xl font-extrabold'>
-        <Link href='/'>
+        <Link href='/'
+        className='text-[#fcd731] text-2xl text-center font-mono font-[900]'>
         Vikkycode
         </Link>
         </div>
         <nav className=' hidden lg:block'>
         <ul className='flex gap-5'>
-            <Link href='/about'>
+            <a
+            href='#about'
+            className='text-[#fcd731] text-center font-mono font-[900]'>
             <li>About</li>
-            </Link>
-            <Link href='/portfolio'>
-            <li>Portfolio</li>            
-            </Link>
-            <Link href='/skill'>
-            <li>Skill</li>            
-            </Link>
-            <Link href='/contact'>
-            <li>Contact</li>            
-            </Link>
+            </a>
+            <a href='#portfolio'>
+            <li className='text-[#fcd731] text-center font-mono font-[900]'>Portfolio</li>            
+            </a>
+            <a href='#skill'>
+            <li className='text-[#fcd731] text-center font-mono font-[900]'>Skill</li>            
+            </a>
+            <a href='#Contact'>
+            <li className='text-[#fcd731] text-center font-mono font-[900]'>Contact</li>            
+            </a>
         </ul>
         </nav>
         <div className='flex'>
@@ -62,7 +65,7 @@ const Navbar = () => {
           </div>
         )}
         <MdLightMode
-        className='hidden lg:block' 
+        className='hidden lg:block  text-[#fcd731]' 
         size={30} />
         </div>
     </div>

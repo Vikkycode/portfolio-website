@@ -53,3 +53,7 @@ export const projects = [
         demoLink:'https://alvc-fe.vercel.app'
     },
 ]
+
+export const skillData = [
+    
+]
