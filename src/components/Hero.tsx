@@ -2,6 +2,7 @@ import Image from 'next/image'
 import avatar from '../asses/vic.png'
 import style from '../styles/global.module.css'
 import Button from './Button'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -12,14 +13,19 @@ const Hero = () => {
         <h1 className={`text-white  font-mono font-[900] text-4xl xl:text-6xl  mb-5`}>Hello, I am <span className='text-[#fcd731]'>Victor,</span></h1>
         <h1 className='text-3xl lg:text-6xl font-semibold mb-5'> Deaf Frontend Developer</h1>
         <div className='flex space-y-6 space-x-0 items-center flex-col xl:flex-row xl:space-y-0 xl:space-x-6 '>
+         
+         <Link href={`#Contact`}>
          <Button 
           btn="Hire me"
           className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-[#fcd731] text-[#0d0d26]  font-mono font-[900] text-xl py-3 px-5  rounded-md  hover:text-[#fcd731] hover:bg-transparent hover:bg-yellow-200"
           />
+         </Link>
+         <Link href={`#portfolio`}>
         <Button 
           btn="view my portfolio"
           className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-transparent  font-mono font-[900] text-xl  text-[#fcd731] py-3 px-5  rounded-md hover:text-[#0d0d26] hover:bg-[#fcd731]"
           />
+         </Link>
         </div>
         </div>
         <div className='h-[300px] w-[300px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 lg:invisible' tabIndex={0}></div>
