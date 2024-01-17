@@ -55,10 +55,10 @@ const Navbar = () => {
             {isClick && (
         <ul className='flex flex-col h-[50vh] justify-center items-center gap-5'>
             
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Skill</li>
-            <li>Contact</li>
+            <a href="#about"><li>About</li></a>
+            <a href="#about"><li>Skill</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#Contact"><li>Contact</li></a>
         </ul>
             )}
         </nav>

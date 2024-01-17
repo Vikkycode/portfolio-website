@@ -1,50 +1,39 @@
-import Link from 'next/link'
-import {AiFillLinkedin,AiFillTwitterSquare,AiFillGithub} from 'react-icons/ai'
-
 import Image from 'next/image'
-import avatar from '../../public/images/avatar-removebg.png'
-
+import avatar from '../asses/vic.png'
 import style from '../styles/global.module.css'
+import Button from './Button'
+
 const Hero = () => {
   return (
-    <div className='h-screen relative lg:top-[5rem] top-[6rem]'>
+    <div className='h-screen relative lg:top-[5rem] top-[6rem]'
+    tabIndex={0}>
         <div className='lg:flex items-center justify-between'>
-        <div className='flex flex-col flex-1 absolute z-20'>
-        <h1 className={`text-[#fcd731] font-mono font-[900] text-4xl lg:text-6xl mb-5`}>Hello, I am <span>Victor,</span></h1>
-        <h1 className='text-4xl lg:text-6xl font-semibold mb-5'>Frontend Developer</h1>
-        <ul className='flex lg:justify-start justify-center gap-[30px]'>
-          <Link 
-          href='https://linkedin.com/in/victor-oricha'
-          >
-            <AiFillLinkedin
-            size={30} 
-            className='text-[#fcd731]'/>
-          </Link>
-          <Link
-          href='https://github.com/Vikkycode'>
-            <AiFillGithub
-             size={30} 
-             className='text-[#fcd731]'/>
-          </Link>
-          <Link
-          href='https://twitter.com/oricha_victor'>
-            <AiFillTwitterSquare
-             size={30} 
-             className='text-[#fcd731]'/>
-          </Link>
-        </ul>
+        <div className='flex flex-col flex-1 text-center  absolute z-20 xl:text-start order-last xl:order-first'>
+        <h1 className={`text-white  font-mono font-[900] text-4xl xl:text-6xl  mb-5`}>Hello, I am <span className='text-[#fcd731]'>Victor,</span></h1>
+        <h1 className='text-3xl lg:text-6xl font-semibold mb-5'> Deaf Frontend Developer</h1>
+        <div className='flex space-y-6 items-center flex-col xl:flex-row xl:space-x-6'>
+         <Button 
+          btn="Hire me"
+          className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-[#fcd731] text-[#0d0d26]  font-mono font-[900] text-xl py-3 px-5  rounded-md  hover:text-[#fcd731] hover:bg-transparent hover:bg-yellow-200"
+          />
+        <Button 
+          btn="view my portfolio"
+          className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-transparent  font-mono font-[900] text-xl  text-[#fcd731] py-3 px-5  rounded-md hover:text-[#0d0d26] hover:bg-[#fcd731]"
+          />
         </div>
-        <div className='h-[300px] w-[300px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 lg:invisible'></div>
-        <div className='lg:h-[400px] lg:w-[400px] rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 right-[90px] relative
+        </div>
+        <div className='h-[300px] w-[300px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 lg:invisible' tabIndex={0}></div>
+        <div className='lg:h-[400px] lg:w-[400px] rounded-full bg-[#fcd731] right-[90px] relative
         '>
             <div className="h-[395px] w-[395px] rounded-full absolute z-10 left-[2px] top-[3px] bg-[#0d0d26] lg:block hidden"></div>
-            <div className={`${style.gradientCircle} h-[100px] w-[100px] left-[350px] top-[150px] absolute z-10`}></div>
-            <div className={`${style.gradientCircle} h-[200px] w-[200px] left-[170px] lg:left-[230px] -top-[3rem] lg:top-[20px]`}>
+            <div className={`${style.gradientCircle} h-[100px] w-[100px] left-[350px] top-[150px] absolute z-10 xl:block hidden`}></div>
+            <div className={`${style.gradientCircle} h-[200px] w-[200px] left-[170px] lg:left-[230px]  lg:top-[20px] xl:block hidden order-first xl:order-last`}>
           <Image src={avatar} 
-          className='rounded-full absolute z-20 object-cover top-[1px] left-[1px]'
+          className='rounded-full absolute z-20 object-contain top-[1px] left-[1px]'
           height={197}
           width={197}
-          alt="Picture of the Victor" 
+          alt="Picture of the Victor"
+          loading='lazy'
           />          
             </div>
         </div>

@@ -17,10 +17,7 @@ const PortfolioList = () => {
             githlink={project.githhubLink}
             />
         ))
-      }
-
-            
-        
+      }   
     </div>
   )
 }

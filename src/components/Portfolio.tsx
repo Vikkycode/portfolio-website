@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import PortfolioList from './PortfolioList';
-import style from '../styles/global.module.css'
+
 
 
 const Portfolio = ()=>{
