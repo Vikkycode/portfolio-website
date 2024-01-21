@@ -5,10 +5,13 @@ import {AiOutlineClose} from 'react-icons/ai'
 import {HiMenuAlt3} from 'react-icons/hi'
 import {MdLightMode} from 'react-icons/md'
 import styles from '../app/Navbar.module.css'
+import { navlinks } from '@/context/data'
+import {usePathname} from 'next/navigation'
 
 const Navbar = () => {
   const [isClick, setClick] = useState(false)
  
+  const pathname = usePathname()
  const toggleMenu = ()=>{
   setClick(!isClick);
  }
@@ -23,20 +26,15 @@ const Navbar = () => {
         </div>
         <nav className=' hidden lg:block'>
         <ul className='flex gap-5'>
-            <a
-            href='#about'
-            className='text-[#fcd731] text-center font-mono font-[900]'>
-            <li>About</li>
-            </a>
-            <a href='#portfolio'>
-            <li className='text-[#fcd731] text-center font-mono font-[900]'>Portfolio</li>            
-            </a>
-            <a href='#skill'>
-            <li className='text-[#fcd731] text-center font-mono font-[900]'>Skill</li>            
-            </a>
-            <a href='#Contact'>
-            <li className='text-[#fcd731] text-center font-mono font-[900]'>Contact</li>            
-            </a>
+            { navlinks?.map(({path,name})=>(
+              
+              <li key={path}>
+                <Link 
+                href={path}
+                className={`text-center capitalize font-mono font-[900] ${pathname === path ? 'text-[#fcd731]':'' }`}>{name}</Link>
+              </li>
+            ))}
+            
         </ul>
         </nav>
         <div className='flex'>
@@ -46,7 +44,7 @@ const Navbar = () => {
         size={30}/>
         {isClick && (
 
-          <div className='bg-white text-black right-0 z-20 top-0 h-[50vh] w-[150px] absolute'>
+          <div className='bg-[#fcd731] flex flex-col justify-center items-center text-black right-0 z-10 top-0 h-full w-full absolute'>
           <nav className='block lg:hidden'>
             <AiOutlineClose 
             size={30}
@@ -55,10 +53,13 @@ const Navbar = () => {
             {isClick && (
         <ul className='flex flex-col h-[50vh] justify-center items-center gap-5'>
             
-            <a href="#about"><li>About</li></a>
-            <a href="#about"><li>Skill</li></a>
-            <a href="#portfolio"><li>Portfolio</li></a>
-            <a href="#Contact"><li>Contact</li></a>
+            { navlinks?.map(({path,name})=>(
+              <li key={path}>
+                <Link 
+                href={path}
+                className={`text-center text-2xl capitalize font-mono font-[900] ${pathname === name ? 'text-[#fcd731]':'' }`}>{name}</Link>
+              </li>
+            ))}
         </ul>
             )}
         </nav>

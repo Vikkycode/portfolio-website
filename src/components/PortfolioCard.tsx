@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { AiFillGithub, AiOutlineLink } from 'react-icons/ai'
 
 const PortfolioCard = (props:any) => {
   return (
@@ -18,13 +19,23 @@ const PortfolioCard = (props:any) => {
          </div>
          <div className='flex  justify-around items-end bottom-0 left-0 pt-20 '>
          
+         <div className='flex items-center space-x-2'>
+          <AiOutlineLink 
+          size={20}
+          className='text-[#fcd731]'/>
           <Link 
           href={`${props.demolink}`}
-          className='border-none text-[#0d0d26] py-2 px-3 rounded-full bg-[#fcd731] hover:bg-yellow-200'>
-          Live Demo
+          className=' text-[#fcd731]'>
+          Live Preview
           </Link>
+         </div>
+         <div className='flex items-center space-x-2'>
+          <AiFillGithub 
+          size={20}
+          className='text-[#fcd731]'/>
           <Link href={`${props.githlink}`}
-          className='border-none text-[#0d0d26] py-2 px-3 rounded-full bg-[#fcd731]'>Github code</Link>
+          className='text-[#fcd731]'>View code</Link>
+         </div>
          </div>
     </div>
   )

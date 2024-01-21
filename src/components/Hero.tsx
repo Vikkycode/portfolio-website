@@ -14,7 +14,7 @@ const Hero = () => {
         <h1 className='text-3xl lg:text-6xl font-semibold mb-5'> Deaf Frontend Developer</h1>
         <div className='flex space-y-6 space-x-0 items-center flex-col xl:flex-row xl:space-y-0 xl:space-x-6 '>
          
-         <Link href={`#Contact`}>
+         <Link href={`#contact`}>
          <Button 
           btn="Hire me"
           className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-[#fcd731] text-[#0d0d26]  font-mono font-[900] text-xl py-3 px-5  rounded-md  hover:text-[#fcd731] hover:bg-transparent hover:bg-yellow-200"

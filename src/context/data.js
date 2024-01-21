@@ -1,8 +1,40 @@
 import alvc from '../asses/alvc-bg.png'
 import note from '../asses/Notepad1.png'
 import hulu from '../asses/hulu-clone.png'
+import js from '../asses/icons/javascript.svg'
+import html from '../asses/icons/html.svg'
+import css from '../asses/icons/css.svg'
+import ts from '../asses/icons/typescript.svg'
+import rjs from '../asses/icons/reactjs.svg'
+import nextjs from '../asses/icons/nextjs.svg'
+import git from '../asses/icons/git.svg'
+import npm from '../asses/icons/npm.svg'
 // import zararc from '../asses/zararc.png'
 
+
+export const navlinks = [
+    {
+        path:'/',
+        name:'home',
+    },
+    {
+        path:'#about',
+        name:'about',
+    },
+    {
+        path:'#skill',
+        name:'skill',
+    },
+    {
+        path:'#portfolio',
+        name:'portfolio',
+    },
+    {
+        path:'#contact',
+        name:'contact',
+    },
+
+]
 
 export const aboutMeData = [
     {
@@ -51,6 +83,40 @@ export const communicationSkills=[
     },
 ]
 
+export const skills=[
+    {
+        icon:html,
+        name:'HTML',
+    },
+    {
+        icon:css,
+        name:'CSS',
+    },
+    {
+        icon:js,
+        name:'JavaScript',
+    },
+    {
+        icon:rjs,
+        name:'Reacctjs',
+    },
+    {
+        icon:nextjs,
+        name:'NextJs',
+    },
+    {
+        icon:git,
+        name:'git',
+    },
+    {
+        icon:ts,
+        name:'TailwindCSS',
+    },
+    {
+        icon:npm,
+        name:'npm',
+    },
+]
 export const projects = [
     {
         id:1,

@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div id='Contact' className='w-full py-10 h-full xl:h-screen xl:mt-96'>
+    <section id='contact' className='w-full py-10 h-full xl:h-screen xl:mt-96'>
         <div>
             <h1 className={`text-[#fcd731] text-4xl py-20 text-center font-mono font-[900]`}>Contact</h1>
         </div>
@@ -103,7 +103,7 @@ const Contact = () => {
             </form>
         </div>
 
-    </div>
+    </section>
   )
 }
 
