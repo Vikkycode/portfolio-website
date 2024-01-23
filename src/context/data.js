@@ -30,6 +30,10 @@ export const navlinks = [
         name:'portfolio',
     },
     {
+        path:'#experience',
+        name:'experience',
+    },
+    {
         path:'#contact',
         name:'contact',
     },
@@ -168,3 +172,65 @@ export const projects = [
     },
 ]
 
+export const experiences =[
+    {
+        id:1,
+        role:'Frontend wed developer',
+        company:'Blue Algorithm Limited Technology',
+        year:'May 2022 - Present',
+        description:'I improved the existing user experience of the web app',
+        skills:[
+            {
+                title:'Nextjs'
+            },
+            {
+                title:'Tailwindcss'
+            },
+            {
+                title:'AOS'
+            }
+        ],
+        location:'Jos',
+        link:'blue.com'
+    },
+    {
+        id:2,
+        role:'Frontend wed developer',
+        company:'Blue Algorithm Limited Technology',
+        year:'May 2022 - Present',
+        description:'I improved the existing user experience of the web app',
+        skills:[
+            {
+                title:'Nextjs'
+            },
+            {
+                title:'Tailwindcss'
+            },
+            {
+                title:'AOS'
+            }
+        ],
+        location:'Jos',
+        link:'blue.com'
+    },
+    {
+        id:3,
+        role:'Frontend wed developer',
+        company:'Blue Algorithm Limited Technology',
+        year:'May 2022 - Present',
+        description:'I improved the existing user experience of the web app',
+        skills:[
+            {
+                title:'Nextjs'
+            },
+            {
+                title:'Tailwindcss'
+            },
+            {
+                title:'AOS'
+            }
+        ],
+        location:'Jos',
+        link:'blue.com'
+    },
+]

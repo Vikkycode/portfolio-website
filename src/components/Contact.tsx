@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id='contact' className='w-full py-10 h-full xl:h-screen xl:mt-96'>
         <div>
-            <h1 className={`text-[#fcd731] text-4xl py-20 text-center font-mono font-[900]`}>Contact</h1>
+            <h1 className={`text-[#fcd731] text-4xl py-0 xl:py-20 text-center font-mono font-[900]`}>Contact</h1>
         </div>
         <div className='flex flex-1 justify-between items-start flex-col xl:flex-row'>
         <div className='flex flex-col space-y-20 gap-5 lg:mt-5 my-10 order-last xl:order-first'>
