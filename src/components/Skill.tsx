@@ -9,9 +9,9 @@ function Skill() {
         <div className='flex flex-col justify-between  items-center'>
         <div>
             <h1 className={`text-[#fcd731] text-4xl pt-10 text-center font-mono font-[900]`}>Skills</h1>
-            <h2 className='text-[#fcd731] text-2xl py-10 max-w-xs xl:max-w-lg text-center font-mono font-[900]'>The skills, tools, and technologies I am really good at:</h2>
+            <h2 className='text-[#fcd731] text-2xl py-10 max-w-xs xl:max-w-lg text-center font-mono font-[600]'>The skills, tools, and technologies I am really good at:</h2>
         </div>
-        <ul className='grid grid-cols-2 grid-rows-4 xl:grid-cols-4 xl:grid-rows-2 gap-32 xl:gap-x-40 '>
+        <ul className='grid grid-cols-2 grid-rows-4 xl:grid-cols-4 xl:grid-rows-2 gap-32  xl:gap-x-40'>
         {skills.map((icon)=>(
             <li key={icon.name}
             className='flex flex-col'>

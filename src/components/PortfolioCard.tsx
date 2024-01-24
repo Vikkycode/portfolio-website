@@ -5,19 +5,19 @@ import { AiFillGithub, AiOutlineLink } from 'react-icons/ai'
 
 const PortfolioCard = (props:any) => {
   return (
-    <div className='w-[350px] pb-4 bg-[#0d0d26] rounded-md border-2 border-[#fcd731] border-[#ccc]'>
+    <div className='w-[315px] pb-4 bg-[#0d0d26] rounded-md border-2 border-[#fcd731] border-[#ccc]'>
         <Image
          src={props.image}
          alt='hello'
          height={500}
-         width={350}
+         width={315}
         loading='lazy'
          />
-         <div className='p-2 flex items-center justify-center flex-col'>
+         <div className='p-2 flex items-center justify-center flex-col px-6'>
             <h1 className='font-500 leading-[32px] tracking-[-2%] text-xl'>{props.title}</h1>
-            <p className='font-300 leading-[32px] tracking-[-2%] text-left text-[12px]'>{props.overview}</p>
+            <p className='font-300 leading-[32px] tracking-[-2%] text-left text-[14px]'>{props.overview}</p>
          </div>
-         <div className='flex  justify-around items-end bottom-0 left-0 pt-20 '>
+         <div className='flex  justify-around items-end bottom-0 left-0 pt-6 '>
          
          <div className='flex items-center space-x-2'>
           <AiOutlineLink 

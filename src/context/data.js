@@ -1,6 +1,10 @@
 import alvc from '../asses/alvc-bg.png'
-import note from '../asses/Notepad1.png'
+import kcca from '../../public/images/kcca.png'
 import hulu from '../asses/hulu-clone.png'
+import note from '../../public/images/note.png'
+import netflix from '../../public/images/Netflix 6 signin.png'
+
+
 import js from '../asses/icons/javascript.svg'
 import html from '../asses/icons/html.svg'
 import css from '../asses/icons/css.svg'
@@ -124,61 +128,53 @@ export const skills=[
 export const projects = [
     {
         id:1,
-        image:hulu,
-        title:'Netflix Clone web appsz',
-        description:'building a netflix clone web app using Reactjs',
-        githhubLink:'https://github.com/netflix-clone',
-        demoLink:'https://alvc-fe.vercel.app'
+        image:kcca,
+        title:'Kids Club Code Africa ',
+        description:'Improving user experience of the existing web app using Nextjs,TailwindCSS, Animated AOS',
+        githhubLink:'https://github.com/bluealgorithm/newkcca',
+        demoLink:'https://new.kidcodeclubafrica.org'
     },
     {
         id:2,
-        image:hulu,
-        title:'Hulu Clone web app',
-        description:'building a netflix clone web app using Reactjs',
-        githhubLink:'https://github.com/hulu-clone',
+        image:alvc,
+        title:'AgileLean Landing pages',
+        description:'building a landing page web app using Reactjs, TailwindCSS',
+        githhubLink:'https://github.com/Vikkycode/AgileLean',
         demoLink:'https://alvc-fe.vercel.app'
     },
     {
         id:3,
-        image:note,
-        title:'Notepad web app',
-        description:'building a netflix clone web app using Reactjs',
-        githhubLink:'https://github.com/notepad',
-        demoLink:'https://alvc-fe.vercel.app'
+        image:netflix,
+        title:'Netflix Clone',
+        description:'Building a netflix clone full stack web app using Reactjs,CSS, FireBase with TMDB API',
+        githhubLink:'https://github.com/Vikkycode/Netflix-clone',
+        demoLink:'http://netflix-clone8.netlify.app'
     },
     {
         id:4,
-        image:alvc,
-        title:'Agilean web app',
-        description:'building a netflix clone web app using Reactjs',
-        githhubLink:'https://github.com/agilean',
-        demoLink:'https://alvc-fe.vercel.app'
+        image:note,
+        title:'CRUD Note app',
+        description:'developing CRUD note web app using Reactjs, tailwindCSS and adding Search filter and dark mode',
+        githhubLink:'https://github.com/Vikkycode/Notepad',
+        demoLink:'https://notepad-vikkycode.vercel.app'
     },
     {
         id:5,
-        image:alvc,
-        title:'Law Portfolio website',
-        description:'building a netflix clone web app using Reactjs',
-        githhubLink:'https://github.com/law-portfolio-website',
-        demoLink:'https://alvc-fe.vercel.app'
-    },
-    {
-        id:6,
-        image:alvc,
-        title:'Law Portfolio website',
-        description:'building a netflix clone web app using Reactjs',
-        githhubLink:'https://github.com/law-portfolio-website',
-        demoLink:'https://alvc-fe.vercel.app'
+        image:hulu,
+        title:'Hulu Clone',
+        description:'building a hulu clone web app using Reactjs,CSS and TMDB API',
+        githhubLink:'https://github.com/Vikkycode/Hulu-clone',
+        demoLink:'https://hulu-clone-beta-two.vercel.app'
     },
 ]
 
 export const experiences =[
     {
         id:1,
-        role:'Frontend wed developer',
-        company:'Blue Algorithm Limited Technology',
-        year:'May 2022 - Present',
-        description:'I improved the existing user experience of the web app',
+        role:'Frontend Developer',
+        company:'Kids Club Code Africa',
+        year:'May 2023 - Present',
+        description:'As an accessible Frontend Developer, I am responsible for user experience of the existing web app. I am passionate about making the web app accessible to people with disability.',
         skills:[
             {
                 title:'Nextjs'
@@ -191,14 +187,14 @@ export const experiences =[
             }
         ],
         location:'Jos',
-        link:'blue.com'
+        link:'https://new.kidcodeclubafrica.org'
     },
     {
         id:2,
-        role:'Frontend wed developer',
+        role:'Frontend Developer Intern',
         company:'Blue Algorithm Limited Technology',
-        year:'May 2022 - Present',
-        description:'I improved the existing user experience of the web app',
+        year:'May 2023 - Present',
+        description:'While my internship as a NYSC Corp, I learned Nextjs and TailwindCSS from my senior frontend engineer, i was assigned an assignment to build law portfolio web app in order to improve my skill development',
         skills:[
             {
                 title:'Nextjs'
@@ -207,30 +203,30 @@ export const experiences =[
                 title:'Tailwindcss'
             },
             {
-                title:'AOS'
+                title:'TypeScript'
             }
         ],
         location:'Jos',
-        link:'blue.com'
+        link:'https://www.bluealgorithmtechnologies.com'
     },
     {
         id:3,
-        role:'Frontend wed developer',
-        company:'Blue Algorithm Limited Technology',
-        year:'May 2022 - Present',
-        description:'I improved the existing user experience of the web app',
+        role:'Frontend Development Facilitator',
+        company:'Deaf Technology Foundation',
+        year:'March 2023 - Present',
+        description:'As a Deaf facilitator, I am responsible for facilitating Deaf community on Frontend development course. As a role model, I motivate, advise and encourage deaf children to pursue their interests in Computer Science and help them asking making a right decision before picking up tech skill that pique their interests.',
         skills:[
             {
-                title:'Nextjs'
+                title:'HTML'
             },
             {
-                title:'Tailwindcss'
+                title:'CSS'
             },
             {
-                title:'AOS'
+                title:'JavaScript'
             }
         ],
         location:'Jos',
-        link:'blue.com'
+        link:'https://deaftechfoundation.org'
     },
 ]
