@@ -5,7 +5,8 @@ import {projects} from '@/context/data'
 const PortfolioList = () => {
  
   return (
-    <div className='grid grid-cols-1 xl:grid-cols-3 grid-rows-3 xl:grid-rows-1 gap-6 '>
+    <div className='grid grid-cols-1 xl:grid-cols-3 grid-rows-3 xl:grid-rows-1 gap-6 '
+    data-aos="fade-up">
       {
         projects.map(project => (
             <PortfolioCard

@@ -1,22 +1,35 @@
-import React from 'react'
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Portfolio from '@/components/Portfolio'
-import Contact from '@/components/Contact'
-import Skill from '@/components/Skill'
-import Experience from '@/components/Experience'
+import React, {Suspense} from 'react'
+import dynamic from 'next/dynamic'
+
+  const Navbar = dynamic(()=> import('@/components/Navbar'),{ssr:false})
+  const Hero = dynamic(()=> import('@/components/Hero'))
+  const About = dynamic(()=> import('@/components/About'))
+  const Portfolio = dynamic(()=> import('@/components/Portfolio'))
+  const Experience = dynamic(()=> import('@/components/Experience'),{ssr:false})
+  const Skill = dynamic(()=> import('@/components/Skill'),{ssr:false})
+  const Contact = dynamic(()=> import('@/components/Contact'),{ssr:false})
+  const BacktoTop = dynamic(()=> import('@/components/BacktoTop'))
+  const Footer = dynamic(()=> import('@/components/Footer'))
+  const Animation = dynamic(()=> import('@/Animation'))
+
 
 export default function Home() {
+  
   return (
     <main className=" flex flex-col max-w-[1200px] mx-auto px-6">
+    <Suspense fallback={<p>loading...</p>}>
     <Navbar />
+    </Suspense>
+    <Animation>
     <Hero />
     <About />
     <Skill />
     <Portfolio />
     <Experience />
     <Contact />
+    </Animation>
+    <Footer />
+    <BacktoTop />
     </main>
   )
 }

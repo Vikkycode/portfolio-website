@@ -1,11 +1,11 @@
 'use client'
 import React,{useRef} from 'react'
-import Button from './Button'
+import dynamic from 'next/dynamic'
 import {AiOutlineMail, AiOutlineMobile, AiOutlineHome, AiFillLinkedin,AiFillTwitterSquare,AiFillGithub} from 'react-icons/ai'
 import Link from 'next/link'
 import emailjs from '@emailjs/browser';
 
-
+const Button = dynamic(() => import('@/components/Button'))
 const serviceID = process.env.SERVICE_ID
 const templateID = process.env.TEMPLATE_ID
 const publicID = process.env.PUBLIC_ID
@@ -35,11 +35,12 @@ const Contact = () => {
 
   return (
     <section id='contact' className='w-full py-4 h-full xl:h-screen xl:mt-96'>
-        <div>
-            <h1 className={`text-[#fcd731] text-4xl py-0 xl:py-20 text-center font-mono font-[900]`}>Contact</h1>
+        <div data-aos="fade-up">
+            <h1 className={`text-[#fcd731] text-4xl py-10 xl:py-20 text-center font-mono font-[900]`}>Contact</h1>
         </div>
         <div className='flex flex-1 justify-between items-start flex-col xl:flex-row'>
-        <div className='flex flex-col space-y-20 gap-5 lg:mt-5 my-10 order-last xl:order-first'>
+        <div className='flex flex-col space-y-20 gap-5 lg:mt-5 my-10 order-last xl:order-first' 
+        data-aos="fade-up">
                 <div className='flex items-center space-x-4'>
                   <AiOutlineMail 
                   size={32}
@@ -65,7 +66,8 @@ const Contact = () => {
                   className='text-[#fcd731]' />
                   <p className='text-[#fcd731] font-mono font-[900] text-xl'>Signwithvictor@gmail.com</p>
                 </div> */}
-        <ul className='flex lg:justify-start justify-center gap-[30px]'>
+        <ul className='flex lg:justify-start justify-center gap-[30px]' 
+        data-aos="fade-up">
           <li>
           <Link 
           href='https://linkedin.com/in/victor-oricha'
@@ -96,9 +98,11 @@ const Contact = () => {
         </ul>
 
             </div>
-            <form ref={form} onSubmit={sendEmail}>
-                <div className='flex justify-center flex-col items-center order-first xl:order-last'>
-                <div className='py-3 flex flex-col'>
+            <form ref={form} onSubmit={sendEmail} 
+            data-aos="fade-up">
+                <div className='flex justify-center -mt-5 flex-col items-center order-first xl:order-last'>
+                <div className='py-3 flex flex-col'
+                data-aos="fade-up">
                     <label className='py-3 font-mono text-xl text-[#fcd731] font-mono font-[900]' htmlFor="">Full Name: </label>
                     <input 
                     type="text" 
@@ -107,7 +111,8 @@ const Contact = () => {
                     name="user_name"
                      />
                 </div>
-                <div className='py-3 flex flex-col'>
+                <div className='py-3 flex flex-col'
+                data-aos="fade-up">
                     <label className='py-3 text-[#fcd731] text-xl font-mono font-[900]' htmlFor=""> Email: </label>
                     <input 
                     type="email" 
@@ -116,7 +121,8 @@ const Contact = () => {
                     name="user_email"
                      />
                 </div>
-                <div className='py-3 flex flex-col'>
+                <div className='py-3 flex flex-col'
+                data-aos="fade-up">
                     <label className='py-3 text-[#fcd731] text-xl font-mono font-[900]' htmlFor="">Message: </label>
                     <textarea 
                     className='h-[200px] w-[320px] xl:w-[500px] rounded-md  border-none outline-none bg-yellow-300 px-4 text-black placeholder:text-black py-6 resize-none'
@@ -124,10 +130,13 @@ const Contact = () => {
                     name="message"
                      />
                 </div>
+                <div 
+                data-aos="fade-up">
                 <Button 
                 btn="Contact me"
                 className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-transparent  font-mono font-[900] text-xl  text-[#fcd731] py-3 w-[320px] xl:w-[500px] rounded-md hover:text-[#0d0d26] hover:bg-[#fcd731] hover:bg-yellow-200"
                 />
+                </div>
                 </div>
             </form>
         </div>
