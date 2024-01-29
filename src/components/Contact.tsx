@@ -18,7 +18,7 @@ const Contact = () => {
   const sendEmail = (e:any) => {
     e.preventDefault();
 
-    emailjs.sendForm(`${serviceID}`, `${templateID}`, form.current, `${publicID}`)
+    emailjs.sendForm(`${serviceID}`, `${templateID}`, form.current!, `${publicID}`)
       .then((result) => {
           console.log(result.text);
           console.log("Message sent")
