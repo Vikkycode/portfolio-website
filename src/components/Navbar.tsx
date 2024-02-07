@@ -29,7 +29,7 @@ const Navbar = () => {
  }
 
   return (
-    <div className={`${styles.flexCenter} h-[5rem]`}>
+    <header className={`${styles.flexCenter} h-[5rem]`}>
         <div className='text-2xl font-extrabold'
         data-aos="fade-right">
         <Link href='/'
@@ -37,7 +37,7 @@ const Navbar = () => {
         Vikkycode
         </Link>
         </div>
-        <nav className=' hidden lg:block'>
+        <nav className=' hidden md:block'>
         <ul className='flex gap-5'>
             {navlinks?.map(({path,name})=>(
               
@@ -52,14 +52,14 @@ const Navbar = () => {
         </nav>
         <div className='flex' data-aos="fade-left">
         <HiMenuAlt3
-        className='block lg:hidden text-pink-500 text-red-500 text-yellow-500  bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'
+        className='block md:hidden text-pink-500 text-red-500 text-yellow-500  bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'
         onClick={toggleMenu} 
         size={30}/>
         {isClick && (
 
           <div className='bg-[#fcd731] flex flex-col justify-center items-center text-black right-0 z-10 top-0 h-full w-full absolute'
           data-aos="fade-left">
-          <nav className='block lg:hidden'
+          <nav className='block md:hidden'
           >
             <AiOutlineClose 
             size={30}
@@ -72,7 +72,9 @@ const Navbar = () => {
               <li key={path}>
                 <Link 
                 href={path}
-                className={`text-center text-2xl capitalize font-mono font-[900] ${pathname === name ? 'text-[#fcd731]':'' }`}>{name}</Link>
+                className={`text-center text-2xl capitalize font-mono font-[900] ${pathname === name ? 'text-[#fcd731]':'' }`}
+                target='_blanket'>{name}</Link>
+                
               </li>
             ))}
         </ul>
@@ -85,7 +87,7 @@ const Navbar = () => {
         onClick={toggleThemeHandler} 
         size={30} />
         </div>
-    </div>
+    </header>
   )
 }
 

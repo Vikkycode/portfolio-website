@@ -169,26 +169,26 @@ export const projects = [
 ]
 
 export const experiences =[
-    {
-        id:1,
-        role:'Frontend Developer',
-        company:'Kids Club Code Africa',
-        year:'May 2023 - Present',
-        description:'As an accessible Frontend Developer, I am responsible for user experience of the existing web app. I am passionate about making the web app accessible to people with disability.',
-        skills:[
-            {
-                title:'Nextjs'
-            },
-            {
-                title:'Tailwindcss'
-            },
-            {
-                title:'AOS'
-            }
-        ],
-        location:'Jos',
-        link:'https://new.kidcodeclubafrica.org'
-    },
+    // {
+    //     id:1,
+    //     role:'Frontend Developer',
+    //     company:'Kids Club Code Africa',
+    //     year:'May 2023 - Present',
+    //     description:'As an accessible Frontend Developer, I am responsible for user experience of the existing web app. I am passionate about making the web app accessible to people with disability.',
+    //     skills:[
+    //         {
+    //             title:'Nextjs'
+    //         },
+    //         {
+    //             title:'Tailwindcss'
+    //         },
+    //         {
+    //             title:'AOS'
+    //         }
+    //     ],
+    //     location:'Jos',
+    //     link:'https://new.kidcodeclubafrica.org'
+    // },
     {
         id:2,
         role:'Frontend Developer Intern',

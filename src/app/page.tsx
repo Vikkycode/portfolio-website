@@ -16,16 +16,20 @@ import dynamic from 'next/dynamic'
 export default function Home() {
   
   return (
-    <main className=" flex flex-col max-w-[1200px] mx-auto px-6">
+    <main className=" flex flex-col max-w-[1200px] mx-auto px-6 xs:px-8">
     <Suspense fallback={<p>loading...</p>}>
     <Navbar />
     </Suspense>
     <Animation>
     <Hero />
     <About />
+    <Suspense fallback={<p>loading...</p>}>
     <Skill />
+    </Suspense>
     <Portfolio />
+    <Suspense fallback={<p>loading...</p>}>
     <Experience />
+    </Suspense>
     <Contact />
     </Animation>
     <Footer />
