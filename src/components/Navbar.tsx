@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className='text-2xl font-extrabold'
         data-aos="fade-right">
         <Link href='/'
-        className='text-[#fcd731] text-2xl text-center font-mono font-[900]'>
+        className='bg-gradient-to-r from-yellow-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl text-center font-mono font-[900]'>
         Vikkycode
         </Link>
         </div>

@@ -1,27 +1,33 @@
 'use client'
-import React,{useRef} from 'react'
+import React,{useRef, useState} from 'react'
 import dynamic from 'next/dynamic'
 import {AiOutlineMail, AiOutlineMobile, AiOutlineHome, AiFillLinkedin,AiFillTwitterSquare,AiFillGithub} from 'react-icons/ai'
+import { Toaster,toast } from 'sonner'
 import Link from 'next/link'
 import emailjs from '@emailjs/browser';
 
 const Button = dynamic(() => import('@/components/Button'))
-const serviceID = process.env.SERVICE_ID
-const templateID = process.env.TEMPLATE_ID
-const publicID = process.env.PUBLIC_ID
+
+// const serviceID = process.env.SERVICE_ID
+// const templateID = process.env.TEMPLATE_ID
+// const publicID = process.env.PUBLIC_ID
 
 
 const Contact = () => {
+  const [isSend, setIsend] = useState(false)
 
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e:any) => {
+  const sendEmail = async (e:any) => {
     e.preventDefault();
 
-    emailjs.sendForm(`${serviceID}`, `${templateID}`, form.current!, `${publicID}`)
+   await emailjs.sendForm('service_i9hhj8s', `template_df3edvj`, form.current!, `fZX99hTE3YePllAvG`)
       .then((result) => {
           console.log(result.text);
-          console.log("Message sent")
+          setIsend(true)
+          setTimeout(() =>{
+            setIsend(false)
+          },1000)
       }, (error) => {
           console.log(error.text);
       });
@@ -132,8 +138,10 @@ const Contact = () => {
                 </div>
                 <div 
                 data-aos="fade-up">
+                <Toaster richColors position='top-right' />
                 <Button 
                 btn="Contact me"
+                onClick={() => toast.success("Success")}
                 className="focus-visible:outline-2  border-2 border-[#fcd731] transition delay-100 bg-transparent  font-mono font-[900] text-xl  text-[#fcd731] py-3 w-[320px] xl:w-[500px] rounded-md hover:text-[#0d0d26] hover:bg-[#fcd731] hover:bg-yellow-200"
                 />
                 </div>

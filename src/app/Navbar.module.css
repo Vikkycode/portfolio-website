@@ -9,3 +9,9 @@
 .button{
     @apply bg-red-300
 }
+
+
+.gradientbg{
+    @apply from-pink-600 to-yellow-400
+  }
+  
