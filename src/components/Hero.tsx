@@ -44,9 +44,9 @@ const Hero = () => {
             <div className={`${style.gradientCircle} h-[100px] w-[100px] left-[350px] top-[150px] absolute z-10 xl:block hidden`}></div>
             <div className={`${style.gradientCircle} h-[200px] w-[200px] left-[170px] lg:left-[230px]  lg:top-[20px] xl:block hidden order-first xl:order-last`}>
           <Image src={avatar} 
-          className='rounded-full absolute z-20 object-contain top-[1px] left-[1px]'
-          height={300}
-          width={300}
+          className='rounded-full absolute z-20 object-contain top-10 left-2'
+          height={500}
+          width={500}
           alt="Picture of the Victor"
           priority
           />          
