@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import image from '../asses/vic2.png'
+import image from '../../public/images/victor.png'
 import Link from 'next/link'
 
 

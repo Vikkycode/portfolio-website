@@ -11,7 +11,7 @@ import rjs from '../asses/icons/reactjs.svg'
 import nextjs from '../asses/icons/nextjs.svg'
 import git from '../asses/icons/git.svg'
 import npm from '../asses/icons/npm.svg'
-import tidi from '../asses/tidi.png'
+import tidi from '../asses/tidi.PNG'
 // import zararc from '../asses/zararc.png'
 
 
