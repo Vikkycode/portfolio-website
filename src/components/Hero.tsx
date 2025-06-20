@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import avatar from '../asses/vic.png'
+import avatar from '../asses/victor.png'
 import style from '../styles/global.module.css'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
@@ -18,7 +18,7 @@ const Hero = () => {
         className='flex flex-col flex-1 text-center xl:z-20 absolute  xl:text-start order-last xl:order-first'
         data-aos="fade-up">
         <h1 className={`text-white  font-mono font-[900] text-4xl xl:text-6xl  mb-5`}>Hello, I am <span className='text-[#fcd731]'>Victor,</span></h1>
-        <h1 className='text-3xl lg:text-6xl font-semibold mb-5'> Deaf Frontend Developer</h1>
+        <h1 className='text-3xl lg:text-6xl font-semibold mb-5'> Frontend Software Engineer </h1>
         <div className='flex space-y-6 space-x-0 items-center flex-col xl:flex-row xl:space-y-0 xl:space-x-6 '>
          
          <Link href={`#contact`}>
@@ -35,7 +35,7 @@ const Hero = () => {
          </Link>
         </div>
         </div>
-        <div className='h-[300px] w-[300px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 lg:invisible' tabIndex={0}
+        <div className='h-[400px] w-[400px]  bg-[#0d0d26] rounded-full  border-x-cyan-500 border-y-red-500 lg:invisible' tabIndex={0}
         ></div>
         <div className='lg:h-[400px] lg:w-[400px] rounded-full bg-[#fcd731] right-[90px] relative
         '
@@ -45,8 +45,8 @@ const Hero = () => {
             <div className={`${style.gradientCircle} h-[200px] w-[200px] left-[170px] lg:left-[230px]  lg:top-[20px] xl:block hidden order-first xl:order-last`}>
           <Image src={avatar} 
           className='rounded-full absolute z-20 object-contain top-[1px] left-[1px]'
-          height={197}
-          width={197}
+          height={300}
+          width={300}
           alt="Picture of the Victor"
           priority
           />          

@@ -15,6 +15,7 @@ const page = () => {
         <div className='xl:flex lg:flex-row  flex-col justify-between items-center flex-1 items-top '
         data-aos="fade-up">
         {/* <div className=''>
+        
             <Image
             src={image}
             alt='picture'

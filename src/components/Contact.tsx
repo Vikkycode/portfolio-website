@@ -51,7 +51,7 @@ const Contact = () => {
                   <AiOutlineMail 
                   size={32}
                   className='text-[#fcd731]' />
-                  <p className='text-[#fcd731] font-mono font-[900] text-[14px]'>Signwithvictor@gmail.com</p>
+                  <p className='text-[#fcd731] font-mono font-[900] text-[14px]'>victororicha10@gmail.com</p>
                 </div>
                 <div className='flex items-center space-x-4'>
                   <AiOutlineMobile 
@@ -59,13 +59,13 @@ const Contact = () => {
                   className='text-[#fcd731]' />
                   <p className='text-[#fcd731] font-mono font-[900] text-[14px]'>+2347036708999</p>
                 </div>
-                <div className='flex items-center space-x-4'>
+                {/* <div className='flex items-center space-x-4'>
                   <AiOutlineHome
                   size={32}
                   className='text-[#fcd731]' />
                   <p className='text-[#fcd731] font-mono font-[900] text-[14px]
                   '>Zarmangda- Rayfield junction, Jos</p>
-                </div>
+                </div> */}
                 {/* <div className='flex items-center space-x-4'>
                   <AiOutlineMail 
                   size={32}

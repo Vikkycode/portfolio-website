@@ -30,8 +30,8 @@ const About = () => {
          data-aos="fade-up">
             <h1 className='pt-6 xl:pt-0 font-semibold text-center text-start text-[#fcd731] font-mono font-[900] text-2xl'>Hello there</h1>
             <div className='flex flex-col space-y-5'>
-            <p className='text-white font-mono font-[900] text-start text-[16px]'>I am Victor Oricha, a dynamic frontend developer breaking barriers in the digital realm. Despite being deaf, my commitment to excellence resonates in every line of code</p>
-            <p className='text-white font-mono text-start font-[900] text-[14px]'>I am a passionate frontend developer with a unique perspective, navigating the coding landscape with a vision for inclusivity and accessibility. {" "} <Link 
+            <p className='text-white font-mono font-[900] text-start text-[16px]'>I am Victor Oricha, an accessible frontend software engineer breaking barriers in the digital realm. Despite being deaf, my commitment to excellence resonates in every line of code</p>
+            <p className='text-white font-mono text-start font-[900] text-[14px]'>I am a passionate digital inclusion advocate with a unique perspective, navigating the coding landscape with a vision for inclusivity and accessibility. {" "} <Link 
             href={'/about'} 
             aria-label='about me' 
             className='text-[#fcd731]'>Read more</Link></p>

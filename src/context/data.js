@@ -13,6 +13,7 @@ import rjs from '../asses/icons/reactjs.svg'
 import nextjs from '../asses/icons/nextjs.svg'
 import git from '../asses/icons/git.svg'
 import npm from '../asses/icons/npm.svg'
+import tidi from '../asses/tidi.png'
 // import zararc from '../asses/zararc.png'
 
 
@@ -47,16 +48,16 @@ export const navlinks = [
 export const aboutMeData = [
     {
         headline:'about me:',
-        subheadline:`Hello there! I'm Victor Oricha, a dynamic frontend developer breaking barriers in the digital realm. Despite being deaf, my commitment to excellence resonates in every line of code`,
+        subheadline:`Hello there! I'm Victor Oricha, an accessible software frontend engineer with a passion for breaking barriers in the digital realm. Despite being deaf, my commitment to excellence resonates in every line of code`,
     },
     {
         headline:'background:',
         subheadline:`I am a passionate frontend developer with a unique perspective, navigating the coding landscape with a vision for inclusivity and accessibility.`
     },
-    {
-        headline:'technical proficiency:',
-        subheadline:`GitHub: Witness my coding prowess and commitment to excellence through meticulously crafted assignments and projects.`
-    },
+    // {
+    //     headline:'technical proficiency:',
+    //     subheadline:`GitHub: Witness my coding prowess and commitment to excellence through meticulously crafted assignments and projects.`
+    // },
     {
         headline:'Passion & Mission',
         subheadline:`Driven by a fervor for building accessible and inclusive user-friendly applications, I am on a mission to redefine user experiences for everyone. My dedication extends to ensuring accessibility for individuals with disabilities, championing the cause for deaf people, those with visual impairments, and beyond.`
@@ -106,7 +107,7 @@ export const skills=[
     },
     {
         icon:rjs,
-        name:'Reacctjs',
+        name:'ReactJs',
     },
     {
         icon:nextjs,
@@ -126,8 +127,17 @@ export const skills=[
     },
 ]
 export const projects = [
+    
     {
         id:1,
+        image:tidi,
+        title:'Tech Inclusion for the Deaf Initiative ',
+        description:'Developed a Deaf-led website Initiative using Nextjs, TailwindCSS, Animated AOS,etc',
+        githhubLink:'https://github.com/Vikkycode/TIDI',
+        demoLink:'https://techinclusiondeaf.org'
+    },
+    {
+        id:2,
         image:kcca,
         title:'Kids Club Code Africa ',
         description:'Improving user experience of the existing web app using Nextjs,TailwindCSS, Animated AOS',
@@ -135,21 +145,21 @@ export const projects = [
         demoLink:'https://new.kidcodeclubafrica.org'
     },
     {
-        id:2,
+        id:3,
         image:alvc,
         title:'AgileLean Landing pages',
         description:'building a landing page web app using Reactjs, TailwindCSS',
         githhubLink:'https://github.com/Vikkycode/AgileLean',
         demoLink:'https://alvc-fe.vercel.app'
     },
-    {
-        id:3,
-        image:netflix,
-        title:'Netflix Clone',
-        description:'Building a netflix clone full stack web app using Reactjs,CSS, FireBase with TMDB API',
-        githhubLink:'https://github.com/Vikkycode/Netflix-clone',
-        demoLink:'http://netflix-clone8.netlify.app'
-    },
+    // {
+    //     id:4,
+    //     image:netflix,
+    //     title:'Netflix Clone',
+    //     description:'Building a netflix clone full stack web app using Reactjs,CSS, FireBase with TMDB API',
+    //     githhubLink:'https://github.com/Vikkycode/Netflix-clone',
+    //     demoLink:'http://netflix-clone8.netlify.app'
+    // },
     {
         id:4,
         image:note,
@@ -158,42 +168,51 @@ export const projects = [
         githhubLink:'https://github.com/Vikkycode/Notepad',
         demoLink:'https://notepad-vikkycode.vercel.app'
     },
-    {
-        id:5,
-        image:hulu,
-        title:'Hulu Clone',
-        description:'building a hulu clone web app using Reactjs,CSS and TMDB API',
-        githhubLink:'https://github.com/Vikkycode/Hulu-clone',
-        demoLink:'https://hulu-clone-beta-two.vercel.app'
-    },
+    // {
+    //     id:6,
+    //     image:hulu,
+    //     title:'Hulu Clone',
+    //     description:'building a hulu clone web app using Reactjs,CSS and TMDB API',
+    //     githhubLink:'https://github.com/Vikkycode/Hulu-clone',
+    //     demoLink:'https://hulu-clone-beta-two.vercel.app'
+    // },
 ]
 
 export const experiences =[
-    // {
-    //     id:1,
-    //     role:'Frontend Developer',
-    //     company:'Kids Club Code Africa',
-    //     year:'May 2023 - Present',
-    //     description:'As an accessible Frontend Developer, I am responsible for user experience of the existing web app. I am passionate about making the web app accessible to people with disability.',
-    //     skills:[
-    //         {
-    //             title:'Nextjs'
-    //         },
-    //         {
-    //             title:'Tailwindcss'
-    //         },
-    //         {
-    //             title:'AOS'
-    //         }
-    //     ],
-    //     location:'Jos',
-    //     link:'https://new.kidcodeclubafrica.org'
-    // },
+    {
+        id:1,
+        role:'Python Developer and Facilitator for Deaf in Tech',
+        company:'Data Lead AFrica',
+        year:'November 2024 - Present',
+        description:'I am a passionate inclusive and accessible tech instructor who adapts complex tech concepts into simple terms for deaf community for the better understanding and mentor them on their capstone project.',
+        skills:[
+            {
+                title:'Panda'
+            },
+            {
+                title:'Numpy'
+            },
+            {
+                title:'Streamlit'
+            },
+            {
+                title:'matploblibi/seaborn'
+            },
+            {
+                title:'flask'
+            },
+            {
+                title:'Django'
+            },
+        ],
+        location:'Abuja,Nigeria',
+        link:'https://deafintech.org'
+    },
     {
         id:2,
         role:'Frontend Developer Intern',
         company:'Blue Algorithm Limited Technology',
-        year:'May 2023 - Present',
+        year:'May 2023 - April 2024',
         description:'While my internship as a NYSC Corp, I learned Nextjs and TailwindCSS from my senior frontend engineer, i was assigned an assignment to build law portfolio web app in order to improve my skill development',
         skills:[
             {
@@ -206,14 +225,14 @@ export const experiences =[
                 title:'TypeScript'
             }
         ],
-        location:'Jos',
+        location:'Jos,Nigeria',
         link:'https://www.bluealgorithmtechnologies.com'
     },
     {
         id:3,
         role:'Frontend Development Facilitator',
         company:'Deaf Technology Foundation',
-        year:'March 2023 - Present',
+        year:'March 2023 - April 2024',
         description:'As a Deaf facilitator, I am responsible for facilitating Deaf community on Frontend development course. As a role model, I motivate, advise and encourage deaf children to pursue their interests in Computer Science and help them asking making a right decision before picking up tech skill that pique their interests.',
         skills:[
             {
@@ -226,7 +245,7 @@ export const experiences =[
                 title:'JavaScript'
             }
         ],
-        location:'Jos',
+        location:'Jos,Nigeria',
         link:'https://deaftechfoundation.org'
     },
 ]
