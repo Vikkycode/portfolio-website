@@ -3,8 +3,6 @@ import kcca from '../../public/images/kcca.png'
 import hulu from '../asses/hulu-clone.png'
 import note from '../../public/images/note.png'
 import netflix from '../../public/images/Netflix 6 signin.png'
-
-
 import js from '../asses/icons/javascript.svg'
 import html from '../asses/icons/html.svg'
 import css from '../asses/icons/css.svg'
